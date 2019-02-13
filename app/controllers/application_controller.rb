@@ -35,6 +35,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/articles/:id' do
+    @article.save
   end
 
 end
